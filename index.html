@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Aafrin Fathima S - MCA Graduate & Full-Stack Web Developer, UI/UX Designer. Specialized in AI-driven web applications, scalable systems, and front-end design.">
+    <meta name="keywords" content="Aafrin Fathima, Portfolio, Full-Stack Developer, MCA Graduate, UI/UX Designer, MEASI Institute, Web Development, Chennai">
+    <meta name="author" content="Aafrin Fathima S">
+    <meta property="og:title" content="Aafrin Fathima S | Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Aafrin Fathima S, an aspiring software professional, MCA graduate, and Full-Stack Web Developer.">
+    <meta property="og:type" content="website">
+    <title>Aafrin Fathima S | Ultra Hyper Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Dual Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+    <!-- Canvas Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">
+                <span>AF</span>
+                <span class="logo-dot">.</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Journey</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link" id="link-achievements">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav-cta" id="nav-cta-btn">Let's Talk</a>
+                <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-item">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title reveal-item">
+                        <span class="thin-text">Hello, I'm</span><br>
+                        <span class="gradient-text uppercase bold-name">Aafrin Fathima S</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-item">
+                        Aspiring Software Professional & MCA Graduate specializing in <span class="highlight-pink">Full-Stack Development</span>, <span class="highlight-pink">UI/UX Design</span>, and <span class="highlight-pink">AI-driven platforms</span>.
+                    </p>
+                    <div class="hero-ctas reveal-item">
+                        <a href="#projects" class="btn btn-primary btn-glow" id="hero-projects-btn">
+                            View My Work
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary" id="hero-about-btn">
+                            Discover More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal-item">
+                    <div class="visual-card-wrapper">
+                        <!-- Glassmorphic Cyber Card -->
+                        <div class="cyber-glass-card">
+                            <div class="card-header-bar">
+                                <span class="circle red"></span>
+                                <span class="circle yellow"></span>
+                                <span class="circle green"></span>
+                            </div>
+                            <div class="card-body-code">
+                                <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"Aafrin Fathima"</span>,
+  title: <span class="code-string">"MCA Graduate"</span>,
+  passions: [<span class="code-string">"Code"</span>, <span class="code-string">"UI/UX"</span>, <span class="code-string">"AI"</span>],
+  skills: [<span class="code-string">"Fullstack"</span>, <span class="code-string">"Testing"</span>],
+  status: <span class="code-string">"Ready to innovate"</span>
+};
+
+<span class="code-keyword">console</span>.<span class="code-function">log</span>(developer.status);</code></pre>
+                            </div>
+                        </div>
+                        <div class="floating-tech-badge badge-1 animate-float">
+                            <i data-lucide="code-2" class="icon-pink"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="floating-tech-badge badge-2 animate-float-delay-1">
+                            <i data-lucide="cpu" class="icon-gold"></i>
+                            <span>AI Integration</span>
+                        </div>
+                        <div class="floating-tech-badge badge-3 animate-float-delay-2">
+                            <i data-lucide="layers" class="icon-pink"></i>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down-indicator" id="scroll-indicator" aria-label="Scroll Down">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">01 / Get to Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info-card glass-card reveal-item">
+                        <div class="card-accent-line"></div>
+                        <h3>Passionate Developer & Creator</h3>
+                        <p class="about-desc">
+                            I am an aspiring software professional and MCA graduate from <strong>MEASI Institute of Information Technology</strong> (2024-2026) with a strong interest in software development, testing, and UI/UX design. 
+                        </p>
+                        <p class="about-desc">
+                            Proficient in applying programming concepts and modern development practices, with a keen focus on emerging technologies. I am a quick learner with a growth mindset, constantly seeking opportunities to leverage my technical skills, contribute to innovative projects, and build a successful career in the IT industry.
+                        </p>
+                        <div class="about-details-list">
+                            <div class="detail-item">
+                                <i data-lucide="map-pin" class="icon-pink"></i>
+                                <span><strong>Location:</strong> Chennai, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="mail" class="icon-pink"></i>
+                                <span><strong>Email:</strong> <a href="mailto:aafu0313@gmail.com" class="link-hover">aafu0313@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="phone" class="icon-pink"></i>
+                                <span><strong>Phone:</strong> <a href="tel:+919944744386" class="link-hover">+91 9944744386</a></span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-action">
+                            <a href="https://www.linkedin.com/in/aafrin-fathima-sathar-57a07727a" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="about-linkedin-btn">
+                                <i data-lucide="linkedin"></i>
+                                Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-education-timeline reveal-item">
+                        <div class="timeline-card glass-card">
+                            <div class="card-header">
+                                <i data-lucide="graduation-cap" class="header-icon icon-gold"></i>
+                                <h3>Education</h3>
+                            </div>
+                            <div class="education-timeline-items">
+                                <div class="edu-item">
+                                    <div class="edu-dot"></div>
+                                    <span class="edu-duration">2024 - 2026</span>
+                                    <h4 class="edu-degree">Master of Computer Application (MCA)</h4>
+                                    <span class="edu-college">MEASI Institute of Information and Technology</span>
+                                    <div class="edu-score">
+                                        <span class="score-label">CGPA</span>
+                                        <span class="score-value">8.4</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="edu-item">
+                                    <div class="edu-dot"></div>
+                                    <span class="edu-duration">2020 - 2023</span>
+                                    <h4 class="edu-degree">Bachelor of Computer Applications (BCA)</h4>
+                                    <span class="edu-college">Justice Basheer Ahmed Sayeed College for Women</span>
+                                    <div class="edu-score">
+                                        <span class="score-label">CGPA</span>
+                                        <span class="score-value">8.2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="skills-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">02 / Technical Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-languages">
+                        <div class="skill-category-icon-wrapper pink-glow">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Programming</h3>
+                        <p class="skill-intro">Languages utilized to construct backend and frontend logic.</p>
+                        <div class="skills-list">
+                            <div class="skill-badge-item" data-level="90%">
+                                <span class="badge-icon js">JS</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">JavaScript</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar js-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="80%">
+                                <span class="badge-icon py">PY</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">Python</span>
+                                    <span class="badge-level">Proficient</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar py-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & UI/UX -->
+                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-web">
+                        <div class="skill-category-icon-wrapper gold-glow">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <p class="skill-intro">Building blocks for structural layouts, responsive styling, and modern UI/UX design.</p>
+                        <div class="skills-list">
+                            <div class="skill-badge-item" data-level="95%">
+                                <span class="badge-icon html">H5</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">HTML5</span>
+                                    <span class="badge-level">Expert</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar html-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="90%">
+                                <span class="badge-icon css">C3</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">CSS3</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar css-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="85%">
+                                <span class="badge-icon design">UI</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">UI/UX Design</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar design-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="80%">
+                                <span class="badge-icon seo">SEO</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">SEO Optimization</span>
+                                    <span class="badge-level">Proficient</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar seo-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & Backend -->
+                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-backend">
+                        <div class="skill-category-icon-wrapper pink-glow">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Backend & Databases</h3>
+                        <p class="skill-intro">System engines, structured query languages, and API frameworks.</p>
+                        <div class="skills-list">
+                            <div class="skill-badge-item" data-level="85%">
+                                <span class="badge-icon pg">PG</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">PostgreSQL</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar pg-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="90%">
+                                <span class="badge-icon sql">SQL</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">SQL</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar sql-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="85%">
+                                <span class="badge-icon api">API</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">RESTful APIs</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar api-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Version Control -->
+                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-frameworks">
+                        <div class="skill-category-icon-wrapper gold-glow">
+                            <i data-lucide="git-fork"></i>
+                        </div>
+                        <h3>Version Control</h3>
+                        <p class="skill-intro">Frameworks used for tracking changes and version management.</p>
+                        <div class="skills-list">
+                            <div class="skill-badge-item" data-level="90%">
+                                <span class="badge-icon git">GIT</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">Git</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar git-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="90%">
+                                <span class="badge-icon github">GH</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">GitHub</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar github-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools Showcase -->
+                <div class="ai-tools-showcase glass-card reveal-item" id="skills-ai-section">
+                    <div class="ai-glow-overlay"></div>
+                    <div class="ai-header">
+                        <div class="ai-badge">AI EMPOWERED</div>
+                        <h3>Emerging AI Tools Proficiency</h3>
+                        <p>Leveraging state-of-the-art AI assistants and development platforms to boost productivity, accelerate coding workflows, and integrate smart models.</p>
+                    </div>
+                    <div class="ai-tools-grid">
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Copilot">
+                            <span class="tool-dot"></span>
+                            <span>GitHub Copilot</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Antigravity">
+                            <span class="tool-dot active"></span>
+                            <span>Antigravity</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Claude">
+                            <span class="tool-dot"></span>
+                            <span>Claude</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Lovable">
+                            <span class="tool-dot"></span>
+                            <span>Lovable</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Kombai">
+                            <span class="tool-dot"></span>
+                            <span>Kombai</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Codex">
+                            <span class="tool-dot"></span>
+                            <span>OpenAI Codex</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Zencoder">
+                            <span class="tool-dot"></span>
+                            <span>Zencoder</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Replit">
+                            <span class="tool-dot"></span>
+                            <span>Replit</span>
+                        </div>
+                        <div class="ai-tool-badge clickable-ai-badge" data-tool="Traycer">
+                            <span class="tool-dot"></span>
+                            <span>Traycer</span>
+                        </div>
+                    </div>
+
+                    <!-- AI Terminal Console -->
+                    <div class="ai-terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">ai-developer-console.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line"><span class="terminal-prompt">></span> <span id="terminal-command">Select an AI tool badge above to query the console...</span></div>
+                            <div class="terminal-output" id="terminal-output">Ready to execute query commands. Try clicking Antigravity or Claude.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">03 / Professional Experience</span>
+                    <h2 class="section-title">Internships</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="journey-timeline">
+                    <div class="timeline-line"></div>
+
+                    <!-- Internship 1 -->
+                    <div class="journey-card-wrapper left reveal-item" id="exp-1">
+                        <div class="journey-marker">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="journey-card glass-card">
+                            <div class="card-accent-line"></div>
+                            <span class="journey-date">03/03/2026 - 18/03/2026</span>
+                            <h3 class="journey-role">AI Driven Web Development Intern</h3>
+                            <h4 class="journey-company">InnoApp Technologies</h4>
+                            <p class="journey-description">
+                                Developed AI-driven web application features by integrating modern frontend and backend technologies, improving user experience and application functionality.
+                            </p>
+                            <ul class="journey-bullets">
+                                <li>Applied AI concepts and tools to build dynamic, data-driven solutions.</li>
+                                <li>Followed best practices for clean, scalable, and maintainable code.</li>
+                            </ul>
+                            <div class="journey-tags">
+                                <span class="tag">AI Integration</span>
+                                <span class="tag">Frontend</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship 2 -->
+                    <div class="journey-card-wrapper right reveal-item" id="exp-2">
+                        <div class="journey-marker">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="journey-card glass-card">
+                            <div class="card-accent-line gold"></div>
+                            <span class="journey-date">01/05/2025 - 31/05/2025</span>
+                            <h3 class="journey-role">Full-stack Web Development Intern</h3>
+                            <h4 class="journey-company">Prodigy Infotech</h4>
+                            <p class="journey-description">
+                                Full Stack Development Intern with experience in developing and deploying web applications using modern frontend and backend technologies.
+                            </p>
+                            <ul class="journey-bullets">
+                                <li>Designed and implemented responsive UI components using HTML5, CSS3, and JavaScript.</li>
+                                <li>Collaborated on building complete, functional applications with an emphasis on performance, scalability, and user experience.</li>
+                            </ul>
+                            <div class="journey-tags">
+                                <span class="tag">HTML5/CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Full-Stack</span>
+                                <span class="tag">Scalability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship 3 -->
+                    <div class="journey-card-wrapper left reveal-item" id="exp-3">
+                        <div class="journey-marker">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="journey-card glass-card">
+                            <div class="card-accent-line"></div>
+                            <span class="journey-date">05/12/2023 - 05/02/2024</span>
+                            <h3 class="journey-role">Full-stack Web Development Intern</h3>
+                            <h4 class="journey-company">Solar Secure Solutions</h4>
+                            <p class="journey-description">
+                                Experience in full stack web development with a focus on developing dynamic web applications.
+                            </p>
+                            <ul class="journey-bullets">
+                                <li>Proficient in frontend and backend technologies, with hands-on exposure to application design and implementation.</li>
+                                <li>Strong problem-solving skills with an emphasis on clean code, maintainability, and best development practices.</li>
+                            </ul>
+                            <div class="journey-tags">
+                                <span class="tag">Web Apps</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">Clean Code</span>
+                                <span class="tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="projects-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">04 / Portfolio Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-tabs-container reveal-item">
+                    <div class="projects-tabs">
+                        <button class="tab-btn active" data-tab="all" id="tab-all-projects">All Projects</button>
+                        <button class="tab-btn" data-tab="fullstack" id="tab-fullstack-projects">Full-Stack</button>
+                        <button class="tab-btn" data-tab="ai" id="tab-ai-projects">AI-Driven</button>
+                        <button class="tab-btn" data-tab="creative" id="tab-creative-projects">Creative</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: MEASI Smart Campus LMS Nexus -->
+                    <div class="project-card glass-card reveal-item" data-category="fullstack" id="project-measi-lms">
+                        <div class="project-image-wrapper">
+                            <div class="project-img-placeholder design-lms">
+                                <div class="floating-mockup-screen">
+                                    <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                    <div class="mockup-content">
+                                        <div class="mockup-sidebar"></div>
+                                        <div class="mockup-main">
+                                            <div class="mockup-block">LMS Dashboard</div>
+                                            <div class="mockup-row"><div class="mini-block"></div><div class="mini-block"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <a href="#contact" class="btn-project-link" id="project-lms-detail-btn" aria-label="Request Demo">
+                                    <span>Request Demo</span>
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-date">10/2025 - 05/2026</span>
+                                <span class="project-cat">Full-Stack LMS</span>
+                            </div>
+                            <h3 class="project-title">MEASI Smart Campus LMS Nexus</h3>
+                            <p class="project-description">
+                                A real-time e-learning platform developed for MEASI Institute of Information Technology with role-based access control and personalized dashboards.
+                            </p>
+                            <ul class="project-key-features">
+                                <li><i data-lucide="check" class="bullet-icon"></i> Admin, Staff & Student personalized panels</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> Course enrollment & MCQ-based assessment systems</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> Tasks submission, analytics, and QR digital certificates</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">RBAC</span>
+                                <span class="tag">QR Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: VCAN3D -->
+                    <div class="project-card glass-card reveal-item" data-category="ai" id="project-vcan3d">
+                        <div class="project-image-wrapper">
+                            <div class="project-img-placeholder design-3d">
+                                <div class="floating-mockup-screen">
+                                    <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                    <div class="mockup-content mesh-design">
+                                        <div class="mesh-grid"></div>
+                                        <div class="mesh-sphere">3D Model</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <a href="#contact" class="btn-project-link" id="project-vcan-detail-btn" aria-label="Request Demo">
+                                    <span>Request Demo</span>
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-date">01/2026 - 02/2026</span>
+                                <span class="project-cat">AI + 3D Platform</span>
+                            </div>
+                            <h3 class="project-title">VCAN3D Printing Platform</h3>
+                            <p class="project-description">
+                                A full-stack web platform for a 3D printing enterprise, integrating AI-driven model processing, automated workflows, and order handling.
+                            </p>
+                            <ul class="project-key-features">
+                                <li><i data-lucide="check" class="bullet-icon"></i> AI-driven 3D model processing and pricing</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> Automated order management & workflow scheduling</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> High-performance files uploading & processing</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">AI Engine</span>
+                                <span class="tag">3D STL</span>
+                                <span class="tag">Order Workflow</span>
+                                <span class="tag">Database</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Personal Portfolio -->
+                    <div class="project-card glass-card reveal-item" data-category="creative" id="project-portfolio">
+                        <div class="project-image-wrapper">
+                            <div class="project-img-placeholder design-portfolio">
+                                <div class="floating-mockup-screen">
+                                    <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                                    <div class="mockup-content portfolio-mock">
+                                        <div class="p-banner"></div>
+                                        <div class="p-avatar"></div>
+                                        <div class="p-lines"><div></div><div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-hover-overlay">
+                                <a href="#" class="btn-project-link" id="project-portfolio-top-btn" aria-label="Reload Page">
+                                    <span>Active Page</span>
+                                    <i data-lucide="rotate-ccw"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-date">01/2026 - 02/2026</span>
+                                <span class="project-cat">Creative Front-End</span>
+                            </div>
+                            <h3 class="project-title">Ultra Cinematic Portfolio</h3>
+                            <p class="project-description">
+                                Designed and developed a premium, responsive personal portfolio website employing standard-setting modern design aesthetics.
+                            </p>
+                            <ul class="project-key-features">
+                                <li><i data-lucide="check" class="bullet-icon"></i> Glassmorphic containers & glowing dynamic gradients</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> GSAP cinematic animations & canvas particle system</li>
+                                <li><i data-lucide="check" class="bullet-icon"></i> High response speed and comprehensive mobile support</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3 Variables</span>
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section class="achievements-section" id="achievements">
+            <div class="container">
+                <div class="achievements-grid">
+                    <!-- Left: Certifications -->
+                    <div class="certifications-container reveal-item">
+                        <div class="section-header">
+                            <span class="section-subtitle">Credentials</span>
+                            <h2 class="section-title">Certifications</h2>
+                            <div class="section-line"></div>
+                        </div>
+                        <div class="certs-list">
+                            <div class="cert-item-card glass-card">
+                                <div class="cert-icon-box">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>Frontend Web Development</h4>
+                                    <span class="issuer">Besant Technologies</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card glass-card">
+                                <div class="cert-icon-box">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>SQL Certification</h4>
+                                    <span class="issuer">Besant Technologies</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card glass-card">
+                                <div class="cert-icon-box">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>UI/UX Designing</h4>
+                                    <span class="issuer">Futuro Focus</span>
+                                </div>
+                            </div>
+                            <div class="cert-item-card glass-card">
+                                <div class="cert-icon-box">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>Agile Fundamentals using Scrum & Kanban</h4>
+                                    <span class="issuer">Udemy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Achievements & Participations -->
+                    <div class="achievements-container reveal-item">
+                        <div class="section-header">
+                            <span class="section-subtitle">Milestones</span>
+                            <h2 class="section-title">Achievements</h2>
+                            <div class="section-line"></div>
+                        </div>
+                        <p class="achieve-instruction">Click/Hover on cards to celebrate achievements!</p>
+                        <div class="achieve-list">
+                            <div class="achieve-card glass-card celebration-trigger" data-sound="cheer" id="achieve-ethical-hacking">
+                                <div class="card-glow-pink"></div>
+                                <div class="trophy-box">
+                                    <i data-lucide="trophy" class="icon-gold"></i>
+                                </div>
+                                <div class="achieve-content">
+                                    <span class="medal-badge">1st Prize</span>
+                                    <h4>Ethical Hacking</h4>
+                                    <p>Participated in Intra-college competition and secured the first prize.</p>
+                                </div>
+                            </div>
+
+                            <div class="achieve-card glass-card celebration-trigger" data-sound="triumph" id="achieve-shark-tank">
+                                <div class="card-glow-pink"></div>
+                                <div class="trophy-box">
+                                    <i data-lucide="trophy" class="icon-gold"></i>
+                                </div>
+                                <div class="achieve-content">
+                                    <span class="medal-badge">1st Prize</span>
+                                    <h4>Shark Tank</h4>
+                                    <p>Participated in Intra-college startup event and secured the first place.</p>
+                                </div>
+                            </div>
+
+                            <div class="achieve-card glass-card celebration-trigger" data-sound="victory" id="achieve-hackathon">
+                                <div class="card-glow-pink"></div>
+                                <div class="trophy-box">
+                                    <i data-lucide="medal" class="icon-pink"></i>
+                                </div>
+                                <div class="achieve-content">
+                                    <span class="medal-badge bronze">3rd Place</span>
+                                    <h4>Hackathon: "Design to Deploy"</h4>
+                                    <p>Secured the third place in the campus hackathon event.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-glow-1"></div>
+            <div class="contact-glow-2"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">05 / Start a Project</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Panel -->
+                    <div class="contact-panel glass-card reveal-item">
+                        <h3>Let's collaborate on your next digital venture.</h3>
+                        <p class="panel-desc">
+                            Feel free to reach out for career opportunities, full-stack project requests, or collaborative development.
+                        </p>
+                        
+                        <div class="panel-details">
+                            <a href="mailto:aafu0313@gmail.com" class="panel-item glass-card" id="contact-panel-email">
+                                <div class="item-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="item-info">
+                                    <span class="item-label">Email Me</span>
+                                    <span class="item-val">aafu0313@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919944744386" class="panel-item glass-card" id="contact-panel-phone">
+                                <div class="item-icon-box">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="item-info">
+                                    <span class="item-label">Call / WhatsApp</span>
+                                    <span class="item-val">+91 9944744386</span>
+                                </div>
+                            </a>
+
+                            <div class="panel-item glass-card" id="contact-panel-address">
+                                <div class="item-icon-box">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="item-info">
+                                    <span class="item-label">Current Location</span>
+                                    <span class="item-val">Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-row">
+                            <a href="https://www.linkedin.com/in/aafrin-fathima-sathar-57a07727a" target="_blank" rel="noopener noreferrer" class="social-icon-btn glass-card" id="social-linkedin" aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:aafu0313@gmail.com" class="social-icon-btn glass-card" id="social-email" aria-label="Email Address">
+                                <i data-lucide="mail"></i>
+                            </a>
+                            <a href="tel:+919944744386" class="social-icon-btn glass-card" id="social-phone" aria-label="Phone Call">
+                                <i data-lucide="phone"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Declaration Section -->
+        <section class="declaration-section" id="declaration">
+            <div class="container declaration-container">
+                <div class="declaration-card glass-card reveal-item">
+                    <div class="declaration-stamp">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Declaration</h3>
+                    <p class="declaration-text">
+                        "I hereby declare that all the information provided above is true and correct to the best of my knowledge and belief."
+                    </p>
+                    <div class="signature-block">
+                        <span class="sig-name">Aafrin Fathima S</span>
+                        <span class="sig-date">Chennai, India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <span>AF</span><span class="logo-dot">.</span>
+                </a>
+                <p class="footer-copyright">Made with ❤️ by <a href="https://www.innoapptechnologies.in" target="_blank" rel="noopener noreferrer">InnoApp Technologies</a></p>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Journey</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Animation and Icon Libraries -->
+    <!-- GSAP for scroll triggered animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.min.js"></script>
+    
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
