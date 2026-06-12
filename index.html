@@ -46,7 +46,10 @@
                 </ul>
             </nav>
             <div class="nav-actions">
-                <a href="#contact" class="btn btn-nav-cta" id="nav-cta-btn">Let's Talk</a>
+                <a href="#contact" class="btn btn-nav-cta" id="nav-cta-btn">
+                    <i data-lucide="message-circle"></i>
+                    Let's Talk
+                </a>
                 <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Navigation Menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -70,10 +73,15 @@
                     </div>
                     <h1 class="hero-title reveal-item">
                         <span class="thin-text">Hello, I'm</span><br>
-                        <span class="gradient-text uppercase bold-name">Aafrin Fathima S</span>
+                        <span class="gradient-text uppercase bold-name">Aafrin Fathima</span>
                     </h1>
+                    <div class="hero-typewriter reveal-item" aria-live="polite">
+                        <span class="typewriter-prefix">I am a</span>
+                        <span class="typewriter-role role-color-0" id="hero-typed-role"></span>
+                        <span class="typewriter-caret" aria-hidden="true"></span>
+                    </div>
                     <p class="hero-subtitle reveal-item">
-                        Aspiring Software Professional & MCA Graduate specializing in <span class="highlight-pink">Full-Stack Development</span>, <span class="highlight-pink">UI/UX Design</span>, and <span class="highlight-pink">AI-driven platforms</span>.
+                        Aspiring Software Professional & MCA Graduate specializing in <span class="highlight-pink">Full-Stack Development</span>, <span class="highlight-pink">UI/UX Design</span>, and <span class="highlight-pink">AI driven Web developer</span>.
                     </p>
                     <div class="hero-ctas reveal-item">
                         <a href="#projects" class="btn btn-primary btn-glow" id="hero-projects-btn">
@@ -81,6 +89,7 @@
                             <i data-lucide="arrow-up-right"></i>
                         </a>
                         <a href="#about" class="btn btn-secondary" id="hero-about-btn">
+                            <i data-lucide="sparkles"></i>
                             Discover More
                         </a>
                     </div>
@@ -220,7 +229,7 @@
 
                 <div class="skills-grid">
                     <!-- Languages -->
-                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-languages">
+                    <div class="skills-category-card glass-card" id="skill-cat-languages">
                         <div class="skill-category-icon-wrapper pink-glow">
                             <i data-lucide="code-2"></i>
                         </div>
@@ -247,11 +256,31 @@
                                     <div class="badge-progress-bar py-bar" style="width: 80%;"></div>
                                 </div>
                             </div>
+                            <div class="skill-badge-item" data-level="85%">
+                                <span class="badge-icon ts">TS</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">TypeScript</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar ts-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="75%">
+                                <span class="badge-icon java">JV</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">Java</span>
+                                    <span class="badge-level">Proficient</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar java-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Web & UI/UX -->
-                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-web">
+                    <div class="skills-category-card glass-card" id="skill-cat-web">
                         <div class="skill-category-icon-wrapper gold-glow">
                             <i data-lucide="layout"></i>
                         </div>
@@ -302,7 +331,7 @@
                     </div>
 
                     <!-- Database & Backend -->
-                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-backend">
+                    <div class="skills-category-card glass-card" id="skill-cat-backend">
                         <div class="skill-category-icon-wrapper pink-glow">
                             <i data-lucide="database"></i>
                         </div>
@@ -339,11 +368,21 @@
                                     <div class="badge-progress-bar api-bar" style="width: 85%;"></div>
                                 </div>
                             </div>
+                            <div class="skill-badge-item" data-level="80%">
+                                <span class="badge-icon node">ND</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">Node.js</span>
+                                    <span class="badge-level">Proficient</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar node-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Version Control -->
-                    <div class="skills-category-card glass-card reveal-item" id="skill-cat-frameworks">
+                    <div class="skills-category-card glass-card" id="skill-cat-frameworks">
                         <div class="skill-category-icon-wrapper gold-glow">
                             <i data-lucide="git-fork"></i>
                         </div>
@@ -368,6 +407,26 @@
                                 </div>
                                 <div class="badge-progress-bg">
                                     <div class="badge-progress-bar github-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="85%">
+                                <span class="badge-icon figma">FG</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">Figma</span>
+                                    <span class="badge-level">Advanced</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar figma-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-badge-item" data-level="95%">
+                                <span class="badge-icon vscode">VS</span>
+                                <div class="badge-info">
+                                    <span class="badge-title">VS Code</span>
+                                    <span class="badge-level">Expert</span>
+                                </div>
+                                <div class="badge-progress-bg">
+                                    <div class="badge-progress-bar vscode-bar" style="width: 95%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -451,7 +510,7 @@
                     <div class="timeline-line"></div>
 
                     <!-- Internship 1 -->
-                    <div class="journey-card-wrapper left reveal-item" id="exp-1">
+                    <div class="journey-card-wrapper left" id="exp-1">
                         <div class="journey-marker">
                             <i data-lucide="briefcase"></i>
                         </div>
@@ -477,7 +536,7 @@
                     </div>
 
                     <!-- Internship 2 -->
-                    <div class="journey-card-wrapper right reveal-item" id="exp-2">
+                    <div class="journey-card-wrapper right" id="exp-2">
                         <div class="journey-marker">
                             <i data-lucide="briefcase"></i>
                         </div>
@@ -503,7 +562,7 @@
                     </div>
 
                     <!-- Internship 3 -->
-                    <div class="journey-card-wrapper left reveal-item" id="exp-3">
+                    <div class="journey-card-wrapper left" id="exp-3">
                         <div class="journey-marker">
                             <i data-lucide="briefcase"></i>
                         </div>
@@ -544,16 +603,16 @@
 
                 <div class="projects-tabs-container reveal-item">
                     <div class="projects-tabs">
-                        <button class="tab-btn active" data-tab="all" id="tab-all-projects">All Projects</button>
-                        <button class="tab-btn" data-tab="fullstack" id="tab-fullstack-projects">Full-Stack</button>
-                        <button class="tab-btn" data-tab="ai" id="tab-ai-projects">AI-Driven</button>
-                        <button class="tab-btn" data-tab="creative" id="tab-creative-projects">Creative</button>
+                        <button class="tab-btn active" data-tab="all" id="tab-all-projects"><i data-lucide="grid-2x2"></i>All Projects</button>
+                        <button class="tab-btn" data-tab="fullstack" id="tab-fullstack-projects"><i data-lucide="braces"></i>Full-Stack</button>
+                        <button class="tab-btn" data-tab="ai" id="tab-ai-projects"><i data-lucide="brain-circuit"></i>AI-Driven</button>
+                        <button class="tab-btn" data-tab="creative" id="tab-creative-projects"><i data-lucide="wand-sparkles"></i>Creative</button>
                     </div>
                 </div>
 
                 <div class="projects-grid">
                     <!-- Project 1: MEASI Smart Campus LMS Nexus -->
-                    <div class="project-card glass-card reveal-item" data-category="fullstack" id="project-measi-lms">
+                    <div class="project-card glass-card" data-category="fullstack" id="project-measi-lms">
                         <div class="project-image-wrapper">
                             <div class="project-img-placeholder design-lms">
                                 <div class="floating-mockup-screen">
@@ -598,7 +657,7 @@
                     </div>
 
                     <!-- Project 2: VCAN3D -->
-                    <div class="project-card glass-card reveal-item" data-category="ai" id="project-vcan3d">
+                    <div class="project-card glass-card" data-category="ai" id="project-vcan3d">
                         <div class="project-image-wrapper">
                             <div class="project-img-placeholder design-3d">
                                 <div class="floating-mockup-screen">
@@ -640,7 +699,7 @@
                     </div>
 
                     <!-- Project 3: Personal Portfolio -->
-                    <div class="project-card glass-card reveal-item" data-category="creative" id="project-portfolio">
+                    <div class="project-card glass-card" data-category="creative" id="project-portfolio">
                         <div class="project-image-wrapper">
                             <div class="project-img-placeholder design-portfolio">
                                 <div class="floating-mockup-screen">
@@ -797,59 +856,55 @@
                     <div class="section-line"></div>
                 </div>
 
-                <div class="contact-grid">
-                    <!-- Contact Details Panel -->
-                    <div class="contact-panel glass-card reveal-item">
-                        <h3>Let's collaborate on your next digital venture.</h3>
-                        <p class="panel-desc">
-                            Feel free to reach out for career opportunities, full-stack project requests, or collaborative development.
-                        </p>
-                        
-                        <div class="panel-details">
-                            <a href="mailto:aafu0313@gmail.com" class="panel-item glass-card" id="contact-panel-email">
-                                <div class="item-icon-box">
-                                    <i data-lucide="mail"></i>
-                                </div>
-                                <div class="item-info">
-                                    <span class="item-label">Email Me</span>
-                                    <span class="item-val">aafu0313@gmail.com</span>
-                                </div>
-                            </a>
-
-                            <a href="tel:+919944744386" class="panel-item glass-card" id="contact-panel-phone">
-                                <div class="item-icon-box">
-                                    <i data-lucide="phone"></i>
-                                </div>
-                                <div class="item-info">
-                                    <span class="item-label">Call / WhatsApp</span>
-                                    <span class="item-val">+91 9944744386</span>
-                                </div>
-                            </a>
-
-                            <div class="panel-item glass-card" id="contact-panel-address">
-                                <div class="item-icon-box">
-                                    <i data-lucide="map-pin"></i>
-                                </div>
-                                <div class="item-info">
-                                    <span class="item-label">Current Location</span>
-                                    <span class="item-val">Chennai, Tamil Nadu, India</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-links-row">
-                            <a href="https://www.linkedin.com/in/aafrin-fathima-sathar-57a07727a" target="_blank" rel="noopener noreferrer" class="social-icon-btn glass-card" id="social-linkedin" aria-label="LinkedIn Profile">
-                                <i data-lucide="linkedin"></i>
-                            </a>
-                            <a href="mailto:aafu0313@gmail.com" class="social-icon-btn glass-card" id="social-email" aria-label="Email Address">
+                <div class="contact-panel-centered glass-card reveal-item">
+                    <h3>Let's collaborate on your next digital venture.</h3>
+                    <p class="panel-desc">
+                        Feel free to reach out for career opportunities, full-stack project requests, or collaborative development.
+                    </p>
+                    
+                    <div class="panel-details">
+                        <a href="mailto:aafu0313@gmail.com" class="panel-item glass-card" id="contact-panel-email">
+                            <div class="item-icon-box">
                                 <i data-lucide="mail"></i>
-                            </a>
-                            <a href="tel:+919944744386" class="social-icon-btn glass-card" id="social-phone" aria-label="Phone Call">
+                            </div>
+                            <div class="item-info">
+                                <span class="item-label">Email Me</span>
+                                <span class="item-val">aafu0313@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919944744386" class="panel-item glass-card" id="contact-panel-phone">
+                            <div class="item-icon-box">
                                 <i data-lucide="phone"></i>
-                            </a>
+                            </div>
+                            <div class="item-info">
+                                <span class="item-label">Call / WhatsApp</span>
+                                <span class="item-val">+91 9944744386</span>
+                            </div>
+                        </a>
+
+                        <div class="panel-item glass-card" id="contact-panel-address">
+                            <div class="item-icon-box">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="item-info">
+                                <span class="item-label">Current Location</span>
+                                <span class="item-val">Chennai, Tamil Nadu, India</span>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/aafrin-fathima-sathar-57a07727a" target="_blank" rel="noopener noreferrer" class="social-icon-btn glass-card" id="social-linkedin" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:aafu0313@gmail.com" class="social-icon-btn glass-card" id="social-email" aria-label="Email Address">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:+919944744386" class="social-icon-btn glass-card" id="social-phone" aria-label="Phone Call">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -881,6 +936,7 @@
                 <a href="#" class="footer-logo">
                     <span>AF</span><span class="logo-dot">.</span>
                 </a>
+                <span class="footer-copy">© 2026 Aafrin Fathima S | All rights reserved.</span>
             </div>
             <div class="footer-right">
                 <ul class="footer-links">
@@ -900,10 +956,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- Confetti JS -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <!-- Custom Script -->
     <script src="script.js"></script>
